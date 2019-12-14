@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewNoteActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fitsSystemWindows="true">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Secret Note Title"
+        android:textColorHint="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="Write Your Secret Note Here"
+        android:textColorHint="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/colorAccent"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:text="Save"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
